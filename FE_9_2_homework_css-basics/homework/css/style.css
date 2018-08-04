@@ -1,0 +1,157 @@
+@media screen {
+/*---2---*/
+#about .img-fluid{
+ border-radius: 110px;
+}
+.tm-section-title-box:hover{
+	background-color: #31B0D5;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 300%;
+}
+.box{
+border-width: 1px;
+border-color: silver;
+}
+/*---3---*/
+p:first-letter{
+color : #76cdd7;
+font-size : 30px;
+}
+/*---4---*/
+.tm-sidebar, .tm-content-box{
+box-shadow : 0 0 10px rgba(50, 50, 50, 1);
+}
+/**---5---**/
+.tm-content-box {
+position: relative;
+}
+.tm-content-box:not(:empty)::before {
+content: "";
+position: absolute;
+width: 0;
+height: 0;
+top: 0;
+left: 0;
+border-top: 25px solid #31B0D5;
+border-right: 120px solid transparent;
+z-index: 5;
+}
+/*---6---*/
+.carousel-content h2 {
+color : gainsboro;
+letter-spacing: 5px;
+}
+.carousel-description{
+text-align: left;
+}
+/*---7---*/
+h2 + p {
+font-style : italic;
+}
+/*---8---*/
+p:not(.tm-banner-text) {
+line-height : 220%;
+text-indent : 30px;
+}
+/*---9---*/
+.heading h2{
+color : #76cdd7;
+text-align : center;
+}
+.pad a{
+color: #000000;	
+text-decoration:none;
+}
+.pad ol a:visited{
+color : silver;
+text-decoration:none;
+}
+.pad ol a:hover{
+color : #76cdd7;
+border-style: double;
+border-width: 0px 0px 3px 0px;
+}
+.pad ol a.text:after{
+content : "New";
+vertical-align : text-top;
+color : red;
+font-size : 10px;
+}
+/*---10---*/
+.blocks .box:nth-child(2n+1){
+background:#f2f2f2;
+}
+.blocks p::first-letter{
+color : #000000;
+}
+.blocks p{
+text-indent : 0px;
+line-height : 150%;
+font-size : 143%;
+color: #686868;
+}
+.blocks h2{
+font-size : 300%;
+line-height : 120%;
+}
+/*---11---*/
+.tm-main-nav li:not(:last-child){
+border-bottom : 2px dotted silver;
+}
+/*---12---*/
+input[type="text"], input[type="email"]{
+color : red;
+}
+.mandatory-field:after {
+content: "*";
+color : red;
+font-weight: bold;
+}
+button[type="submit"] {
+color : red;
+}
+button[type="submit"]:hover{
+color : #ffffff;
+background: #31b0d5;
+border: 1px solid #31b0d5;
+}
+}
+/*---1---*/
+@media print {
+@page {
+margin-top: 1.5cm;
+}
+body{
+padding-top: 0;
+}
+.tm-sidebar,#about,section:not(:first-of-type){
+display: none;
+}
+.tm-main-content{
+margin: 0;
+}
+.tm-content-box h2{
+color: #4d2eff;
+}
+.pad p{
+font-size: 110%;
+}
+.tm-banner{
+height: 200px;
+padding: 0 0 0 20px;
+}
+.flex-2-col {
+display: block;
+}
+.pad {
+padding: 0 0 0 40px;
+}
+.flex-item:first-child{
+max-width: 100%;
+text-align: left;
+}
+.flex-item:last-child {
+text-align: center;
+}
+}
