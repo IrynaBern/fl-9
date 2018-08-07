@@ -1,0 +1,126 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #ffffff; }
+  body .main-wrapper {
+    max-width: 960px;
+    margin: 0 auto; }
+    body .main-wrapper header {
+      display: grid;
+      grid-template-columns: 360px auto;
+      padding: 10px; }
+      body .main-wrapper header .logo img {
+        display: block;
+        width: 360px; }
+      body .main-wrapper header nav {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 150px 0 20px 0;
+        border-top: 2px solid #617d8a;
+        border-bottom: 2px solid #617d8a; }
+        body .main-wrapper header nav a {
+          color: #1fbcd3;
+          text-transform: uppercase;
+          text-align: center;
+          padding: 1em 0;
+          font-size: 1.2em; }
+          body .main-wrapper header nav a:link, body .main-wrapper header nav a:visited, body .main-wrapper header nav a:hover, body .main-wrapper header nav a:active {
+            text-decoration: none; }
+    body .main-wrapper .toolbar {
+      margin: 10px 0 10px 750px; }
+      body .main-wrapper .toolbar input {
+        width: 95%;
+        box-sizing: border-box;
+        color: #1fbcd3;
+        border: 2px solid #1fbcd3;
+        background-color: #ffffff;
+        text-align: left;
+        font-size: 0.9em;
+        padding: 0.6em 0;
+        text-indent: 15px; }
+        body .main-wrapper .toolbar input::placeholder {
+          color: #1fbcd3; }
+    body .main-wrapper .post-list {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: auto auto;
+      padding: 10px; }
+      body .main-wrapper .post-list article {
+        padding: 10px;
+        background-color: #efefef; }
+        body .main-wrapper .post-list article img {
+          width: 435px; }
+        body .main-wrapper .post-list article div {
+          padding: 10px; }
+          body .main-wrapper .post-list article div .post-description {
+            color: #159587;
+            border-bottom: 2px solid #617d8a;
+            font-size: 0.8em; }
+          body .main-wrapper .post-list article div h3 {
+            color: #1697a6;
+            text-transform: uppercase; }
+          body .main-wrapper .post-list article div p {
+            color: #617d8a;
+            font-size: 0.95em;
+            line-height: 1.5; }
+    body .main-wrapper .about {
+      padding: 10px 10px 10px 20px; }
+      body .main-wrapper .about h1 {
+        color: #1fbcd3;
+        text-transform: uppercase;
+        text-align: right; }
+      body .main-wrapper .about p {
+        color: #617d8a;
+        font-size: 0.95em;
+        line-height: 1.5; }
+      body .main-wrapper .about img {
+        width: 930px; }
+    body .main-wrapper .contact-form {
+      padding: 20px 0 0 0; }
+      body .main-wrapper .contact-form h1 {
+        color: #1fbcd3;
+        text-transform: uppercase;
+        text-align: right;
+        line-height: 0.4; }
+      body .main-wrapper .contact-form h4 {
+        color: #1fbcd3;
+        text-transform: uppercase;
+        text-align: right;
+        line-height: 0.4; }
+      body .main-wrapper .contact-form input {
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+        padding: 15px 20px;
+        border: 2px solid #617d8a;
+        background-color: #ffffff;
+        font: normal 16px 'Helvetica';
+        color: #757575; }
+        body .main-wrapper .contact-form input::placeholder {
+          color: #757575; }
+      body .main-wrapper .contact-form textarea {
+        width: 100%;
+        height: 120px;
+        box-sizing: border-box;
+        padding: 15px 20px;
+        border: 2px solid #617d8a;
+        background-color: #ffffff;
+        font: normal 16px 'Helvetica';
+        color: #757575; }
+        body .main-wrapper .contact-form textarea::placeholder {
+          color: #757575; }
+      body .main-wrapper .contact-form input[type=submit] {
+        width: 20%;
+        background-color: #1fbcd3;
+        border: 2px solid #1fbcd3;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        margin: 10px 0 10px 770px;
+        cursor: pointer; }
+    body .main-wrapper footer {
+      color: #617d8a;
+      font-size: 0.75em; }
+
+/*# sourceMappingURL=style1.css.map */

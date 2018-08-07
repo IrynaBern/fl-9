@@ -1,0 +1,160 @@
+@mixin bordered($width, $color){
+	border-top: $width solid $color;
+	border-bottom: $width solid $color;
+}
+@mixin formFormat{
+	box-sizing: border-box;
+	padding: 15px 20px;
+	border: 2px solid $form_color;
+	background-color: $background_color;
+	font: normal 16px 'Helvetica';
+	color: $form_text;
+}
+body{
+	font-family: $fontStack;
+	background: $background_color;
+.main-wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	header{
+		display: grid;
+		grid-template-columns: 360px auto;
+		padding: 10px;
+		.logo{
+			img{
+				display: block;
+				width: 360px;
+			}
+		}
+		nav{
+			display: grid;
+			grid-template-columns: auto auto auto;
+			margin: 150px 0 20px 0;
+			@include bordered(2px, $navigation_border_color);
+			a{
+				color: $navigation_color;
+				text-transform: uppercase;
+				text-align: center;
+				padding: 1em 0;
+				font-size: 1.2em;
+				&:link, &:visited, &:hover, &:active {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.toolbar{
+		margin: 10px 0 10px 750px;
+		input{
+			width: 95%;
+			box-sizing: border-box;
+			color: $navigation_color;
+			border: 2px solid $navigation_color;
+			background-color: $background_color;
+			text-align: left;
+			font-size: 0.9em;
+			padding: 0.6em 0;
+			text-indent: 15px;
+			&::placeholder{
+				color: $navigation_color;
+			}
+		}
+	}
+	.post-list{
+		display: grid;
+		grid-gap: 30px;
+		grid-template-columns: auto auto;
+		padding: 10px;
+		article{
+			padding: 10px;
+			background-color: $background_post_color;
+			img{
+				width: 435px;
+			}
+			div{
+				padding: 10px;
+			   .post-description{
+					color: $post_description_color;
+					border-bottom: 2px solid $post_description_border_color;
+					font-size: $description_font_size;
+				}
+				h3{
+					color: $head3_color;
+					text-transform: uppercase;
+				}
+				p{
+					color: $paragraf_color;
+					font-size: $paragraf_font_size;
+					line-height: 1.5;
+				}
+			}
+		}
+	}
+	.about{
+		padding: 10px 10px 10px 20px;
+		h1{
+			color: $navigation_color;
+			text-transform: uppercase;
+			text-align: right;
+		}
+		p{
+			color: $paragraf_color;
+			font-size: $paragraf_font_size;
+			line-height: 1.5;
+		}
+		img{
+			width: 930px;
+		}
+	}
+	.contact-form{
+		padding: 20px 0 0 0;
+		h1{
+			color: $navigation_color;
+			text-transform: uppercase;
+			text-align: right;
+			line-height: 0.4;
+		}
+		h4{
+			color: $navigation_color;
+			text-transform: uppercase;
+			text-align: right;
+			line-height: 0.4;
+		}
+		input{
+			width: 100%;
+			margin: 10px 0;
+			@include formFormat;
+			&::placeholder{
+				color: $form_text;
+			}
+		}
+
+		textarea {
+			width: 100%;
+			height: 120px;
+			@include formFormat;
+			&::placeholder{
+				color: $form_text;
+			}
+		}
+		input[type=submit] {
+			width: 20%;
+			background-color: $navigation_color;
+			border: 2px solid $navigation_color;
+			color: #ffffff;
+			padding: 10px;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 0.9em;
+			margin: 10px 0 10px 770px;
+			cursor: pointer;
+		}
+	}
+	
+	footer{
+		color: $footer_color;
+		font-size: 0.75em;
+	}	
+ 
+  }
+ }
