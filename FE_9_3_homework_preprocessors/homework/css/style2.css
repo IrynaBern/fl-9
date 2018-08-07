@@ -108,7 +108,7 @@ body {
         color: #757575; }
         body .main-wrapper .contact-form textarea::placeholder {
           color: #757575; }
-      body .main-wrapper .contact-form input[type=submit] {
+      body .main-wrapper .contact-form input[type="submit"] {
         width: 20%;
         background-color: #fc5830;
         border: 2px solid #fc5830;
