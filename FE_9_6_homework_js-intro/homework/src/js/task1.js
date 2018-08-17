@@ -9,5 +9,5 @@ if(!(!isNaN(parseFloat(price)) && isFinite(price)) ||
 	console.log('Price without discount: ' + +price.toFixed(2) + 
 			'\nDiscount: ' + +discount.toFixed(2) + 
 			'\nPrice with discount: ' + +discountPrice.toFixed(2) + 
-			'\nSaved: ' + +saved);
+			'\nSaved: ' + +saved.toFixed(2));
 	}
