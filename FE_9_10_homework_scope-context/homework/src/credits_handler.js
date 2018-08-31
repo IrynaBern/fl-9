@@ -22,7 +22,7 @@ function userCard(cardKey) {
 	
 	function takeCredits(amount) {
 		if(amount <= object.balance && amount <= object.transactionLimit) {
-		object.balance -=amount;
+		object.balance -= amount;
 		pushLogs('Withdrawal of credits', amount, new Date().toLocaleString('en-GB'));
 		} else {
 			console.log('Your transaction limit or remaining balance are less than credits you want to take.');
