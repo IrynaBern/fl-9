@@ -50,5 +50,5 @@ function values(object){
 
 function showFormattedDate(date){
 	const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-	return `It is ${date.getDate()} of ${date[date.getMonth()]}, ${date.getFullYear()}`;
+	return `It is ${date.getDate()} of ${month[date.getMonth()]}, ${date.getFullYear()}`;
 }
